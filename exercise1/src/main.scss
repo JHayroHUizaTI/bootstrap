@@ -1,0 +1,74 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+$primary-color: #96deda;
+
+// Then add additional custom code here
+
+header {
+    background-color: $primary-color;
+    padding: 15px;
+    width: 100%;
+
+    .title{
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: semibold;
+    }
+
+    .menu_list{
+        display: inline-block;
+        margin: auto 1.5rem;
+        
+
+        li{
+            display: inline-block;
+            text-decoration: none;
+            list-style: none;
+            margin: auto 0.8rem;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+}
+
+
+
+main {
+
+    .container{
+
+        width: 100%;
+        height: 100vh;
+       
+  
+
+        &:nth-child(1){
+            background-color: beige;
+            margin-top: 4.5rem;
+           
+        }
+
+        &:nth-child(2){
+
+            position: relative;
+
+            .title{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+        
+            }
+            
+        }
+    }
+
+}
+
